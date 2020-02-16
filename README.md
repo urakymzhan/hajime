@@ -3,7 +3,7 @@
 
 ## live listen -> https://hajime-player.herokuapp.com/
 
-terminal:
-$ npm run ui
-$ npm run dev (local and on different terminal)
-$ npm start (development)
+> terminal:
+- $ npm run ui
+- $ npm run dev (local and on different terminal)
+- $ npm start (development)
