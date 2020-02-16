@@ -1,0 +1,70 @@
+*::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: beige;
+  background-image: url('./assets/galaxy.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.songs {
+  margin: 5% auto;
+  width: 80%;
+}
+.column-middle {
+  margin: 3% 0;
+}
+#kosandra, #sanavabich, #wheniwin, #vavilon, #gotlove, #captain {
+  width: 15%;
+  min-height: 150px;
+  height: 200px;
+  /* border: 2px solid lightgray; */
+  border-radius: 100%;
+  object-fit: fill;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+#kosandra:hover, #sanavabich:hover, #wheniwin:hover, #vavilon:hover, #gotlove:hover, #captain:hover {
+  animation: scaling 800ms infinite;
+    border: 1px solid lightgray;
+}
+@keyframes scaling {
+  0% { transform: scale(1)}
+  100% { transform: scale(1.1) }
+}
+
+#player {
+  display: none;
+  width: 40%;
+  min-height: 150px;
+  height: 200px;
+}
+
+#maintext {
+  padding: 50px 0 0 0;
+}
+
+.column-up, .column-low {
+  display: flex;
+  justify-content: space-evenly;
+}
+.column-middle {
+  display: flex;
+  justify-content: space-between;
+}
+#reset {
+  color: #990000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#author {
+  color: #6b6b6b;
+}
+
+/* .warning {
+  visibility: hidden;
+} */

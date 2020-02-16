@@ -1,0 +1,11 @@
+if you want to use nodemon do:
+
+" $npm install --save-dev nodemon" or "$ npm i -D nodemon"
+
+on package.json change  "start": "node ./index.js" ->  to -> "dev": "nodemon ./index.js"
+
+finally: " $npm run dev"
+
+
+
+BG photo credit to: Jake weirick @weirick

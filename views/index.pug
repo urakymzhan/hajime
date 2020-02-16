@@ -1,0 +1,33 @@
+extends layout
+
+block layout-content
+  - resetClass = "animated fadeInRight delay-1s"
+  h3#reset(class=resetClass) RESET
+  - pclass = "animated infinite zoomIn delay-4s"
+  p.warning(class=pclass)
+    - songClass = "fas fa-music"
+    i(class=songClass)
+  - songsclass = "animated fadeInLeft delay-1s songs"
+  div(class=songsclass)
+    div.column-up
+      - kosandra = "./assets/kosandra.png"
+      - sanavabich = "./assets/sanavabich.jpg"
+      - wheniwin = "./assets/wheniwin.jpeg"
+      - vavilon ="./assets/vavilon.jpg"
+      - gotlove = "./assets/gotlove.jpg"
+      - captain = "./assets/captain.png"
+      img#kosandra(src=kosandra)
+      img#sanavabich(src=sanavabich)
+    div.column-middle
+      img#wheniwin(src=wheniwin)
+      - kosandraSrc = "https://www.youtube.com/embed/x1ZtIVuHph0?autoplay=1&muted=1"
+      - sanavabichSrc = "https://www.youtube.com/embed/OKQ85j46p0g?autoplay=1&muted=1"
+      - iframestyle = { width: "560", height: "315"}
+      - iframeallow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      iframe#player(src=kosandraSrc, frameborder="0", style=iframestyle, allow=iframeallow, allowfullscreen)
+      h1#maintext Click Your Favorite and Play
+      img#vavilon(src=vavilon)
+    div.column-low
+      img#gotlove(src=gotlove)
+      img#captain(src=captain)
+  h3#author © Ulan Rakymzhanov
