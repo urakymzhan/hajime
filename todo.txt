@@ -1,0 +1,5 @@
+fix images loads and video playing time on deployment
+
+
+
+
