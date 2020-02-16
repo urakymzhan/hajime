@@ -1,4 +1,4 @@
-# hajime
-miyagi player - one of my favorite artist
+# hajime player
+> miyagi - one of my favorite artist
 
 ## live listen -> 
